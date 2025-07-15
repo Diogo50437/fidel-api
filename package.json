@@ -1,0 +1,21 @@
+{
+  "name": "offers-api",
+  "version": "1.0.0",
+  "scripts": {
+    "seed": "ts-node src/seed.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.845.0",
+    "@aws-sdk/lib-dynamodb": "^3.845.0",
+    "aws-sdk": "^2.1355.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.150",
+    "@types/node": "^24.0.14",
+    "aws-lambda": "^1.0.7",
+    "esbuild": "^0.25.6",
+    "serverless-plugin-typescript": "^2.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

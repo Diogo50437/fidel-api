@@ -1,0 +1,8 @@
+{
+  "name": "offers-api",
+  "version": "1.0.0",
+  "scripts": {
+    "seed": "ts-node src/seed.ts"
+  },
+  "dependencies": {}
+}

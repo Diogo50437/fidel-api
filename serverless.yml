@@ -1,0 +1,60 @@
+service: offers-api
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: eu-west-1
+  environment:
+    OFFERS_TABLE: OffersTable
+    LOCATIONS_TABLE: LocationsTable
+  iam:
+    role:
+        statements:
+          - Effect: Allow
+            Action:
+              - dynamodb:PutItem
+              - dynamodb:UpdateItem
+            Resource:
+              - arn:aws:dynamodb:eu-west-1:*:table/OffersTable
+              - arn:aws:dynamodb:eu-west-1:*:table/LocationsTable
+
+resources:
+  Resources:
+    OffersTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: OffersTable
+        BillingMode: PAY_PER_REQUEST
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+
+    LocationsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: LocationsTable
+        BillingMode: PAY_PER_REQUEST
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+
+functions:
+  seedOffers:
+    handler: src/handlers/offers_handler.handler
+
+  seedLocations:
+    handler: src/handlers/locations_handler.handler
+
+  linkLocationToOffer:
+    handler: src/handlers/linking_handler.handler
+    events:
+      - http:
+          path: offers/update
+          method: put
+          cors: true
