@@ -45,10 +45,10 @@ Updates an existing location by:
 - Changing `hasOffer` to `true`
 
 
-## Important Commands
-``` npx serverless deploy ``` Deploys/Updates the Infrastructure Stack <br />
-``` npx serverless invoke -f seedOffers ``` Runs the seedOffers Lambda <br />
-``` npx serverless invoke -f seedLocations ``` Runs the seedLocations Lambda
+## 💻 Important Commands
+``` npx serverless deploy ``` -- Deploys/Updates the Infrastructure Stack <br />
+``` npx serverless invoke -f seedOffers ``` - Runs the seedOffers Lambda <br />
+``` npx serverless invoke -f seedLocations ``` -- Runs the seedLocations Lambda
 
 **Request Example:**
 
