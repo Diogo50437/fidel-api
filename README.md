@@ -1,17 +1,3 @@
-
-
-# npm i --save-dev <package_name>
-
-curl -X PUT https://4nce5hmggf.execute-api.eu-west-1.amazonaws.com/dev/offers/update \
-  -H "Content-Type: application/json" \
-  -d '{
-    "id":"d9b1d9ff-543e-47c7-895f-87f71dcad91b",
-    "locationId":"692126c8-6e72-4ad7-8a73-25fc2f1f56e4"
-  }'
-
-endpoint: PUT - https://4nce5hmggf.execute-api.eu-west-1.amazonaws.com/dev/offers/update
-
-
 # Offers API (Fidel API Coding Challenge)
 
 This project implements a simplified Offers API platform.
@@ -60,9 +46,9 @@ Updates an existing location by:
 
 
 ## Important Commands
-``` npx serverless deploy ```
-``` npx serverless invoke -f seedOffers ```
-``` npx serverless invoke -f seedLocations ```
+``` npx serverless deploy ``` Deploys/Updates the Infrastructure Stack <br />
+``` npx serverless invoke -f seedOffers ``` Runs the seedOffers Lambda <br />
+``` npx serverless invoke -f seedLocations ``` Runs the seedLocations Lambda
 
 **Request Example:**
 
