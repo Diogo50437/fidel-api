@@ -53,7 +53,7 @@ Updates an existing location by:
 **Request Example:**
 
 ```
-curl -X PUT https://4nce5hmggf.execute-api.eu-west-1.amazonaws.com/dev/offers/update \
+curl -X PUT https://<api_id>.execute-api.eu-west-1.amazonaws.com/dev/offers/update \
   -H "Content-Type: application/json" \
   -d '{
     "id":"d9b1d9ff-543e-47c7-895f-87f71dcad91b",
@@ -61,5 +61,6 @@ curl -X PUT https://4nce5hmggf.execute-api.eu-west-1.amazonaws.com/dev/offers/up
   }'
 ```
 
+## ☁️ Architecture Diagram
 
 ![alt text](diagram.png)
