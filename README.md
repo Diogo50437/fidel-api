@@ -47,7 +47,7 @@ Updates an existing location by:
 
 ## 💻 Important Commands
 ``` npx serverless deploy ``` -- Deploys/Updates the Infrastructure Stack <br />
-``` npx serverless invoke -f seedOffers ``` - Runs the seedOffers Lambda <br />
+``` npx serverless invoke -f seedOffers ``` -- Runs the seedOffers Lambda <br />
 ``` npx serverless invoke -f seedLocations ``` -- Runs the seedLocations Lambda
 
 **Request Example:**
@@ -60,3 +60,6 @@ curl -X PUT https://4nce5hmggf.execute-api.eu-west-1.amazonaws.com/dev/offers/up
     "locationId":"03665f6d-27e2-4e69-aa9b-5b39d03e5f59"
   }'
 ```
+
+
+![alt text](diagram.png)

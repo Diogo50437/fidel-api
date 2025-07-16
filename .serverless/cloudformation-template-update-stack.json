@@ -114,7 +114,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "serverless-framework-deployments-eu-west-1-40b328c9-4877",
-          "S3Key": "serverless/offers-api/dev/1752619713887-2025-07-15T22:48:33.887Z/offers-api.zip"
+          "S3Key": "serverless/offers-api/dev/1752675437824-2025-07-16T14:17:17.824Z/offers-api.zip"
         },
         "Handler": "src/handlers/offers_handler.handler",
         "Runtime": "nodejs18.x",
@@ -144,7 +144,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "serverless-framework-deployments-eu-west-1-40b328c9-4877",
-          "S3Key": "serverless/offers-api/dev/1752619713887-2025-07-15T22:48:33.887Z/offers-api.zip"
+          "S3Key": "serverless/offers-api/dev/1752675437824-2025-07-16T14:17:17.824Z/offers-api.zip"
         },
         "Handler": "src/handlers/locations_handler.handler",
         "Runtime": "nodejs18.x",
@@ -174,7 +174,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "serverless-framework-deployments-eu-west-1-40b328c9-4877",
-          "S3Key": "serverless/offers-api/dev/1752619713887-2025-07-15T22:48:33.887Z/offers-api.zip"
+          "S3Key": "serverless/offers-api/dev/1752675437824-2025-07-16T14:17:17.824Z/offers-api.zip"
         },
         "Handler": "src/handlers/linking_handler.handler",
         "Runtime": "nodejs18.x",
@@ -199,34 +199,34 @@
         "LinkLocationToOfferLogGroup"
       ]
     },
-    "SeedOffersLambdaVersioneuqqctaeCmqw6Ar8csHjoZChfzfO2x8RdPIDmIukE": {
+    "SeedOffersLambdaVersionQjlprFG176k16oVCtNeHl6bkewajhbVhfuVbMKQKQ": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SeedOffersLambdaFunction"
         },
-        "CodeSha256": "5KDT3/7fg+7Avtxl5WUgdpXg9FkGBrdO6u3DWxURJoc="
+        "CodeSha256": "Nejo58ca8AO+FB7tcvoV3FTcQvdAmjUgAw22V3D0ek4="
       }
     },
-    "SeedLocationsLambdaVersionszCCdcSGyCZ3f5sZhnowmrYLbqT1rqT6bVHfcucROPk": {
+    "SeedLocationsLambdaVersionxUWFDleS6yFTaofKVGIdW56Qmuj2f2bswKGSEtqSldc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SeedLocationsLambdaFunction"
         },
-        "CodeSha256": "5KDT3/7fg+7Avtxl5WUgdpXg9FkGBrdO6u3DWxURJoc="
+        "CodeSha256": "Nejo58ca8AO+FB7tcvoV3FTcQvdAmjUgAw22V3D0ek4="
       }
     },
-    "LinkLocationToOfferLambdaVersionnzHQUBVVnDF92LwqZWLRwmH9m4WKTg9o3ktt1hGnv8": {
+    "LinkLocationToOfferLambdaVersion1gX6YLIGLs9w4KV4Ugv2YgHMywECSKYYQ7EDkfYb85M": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LinkLocationToOfferLambdaFunction"
         },
-        "CodeSha256": "5KDT3/7fg+7Avtxl5WUgdpXg9FkGBrdO6u3DWxURJoc="
+        "CodeSha256": "Nejo58ca8AO+FB7tcvoV3FTcQvdAmjUgAw22V3D0ek4="
       }
     },
     "ApiGatewayRestApi": {
@@ -359,7 +359,7 @@
         "LinkLocationToOfferLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1752619708177": {
+    "ApiGatewayDeployment1752675433044": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -458,7 +458,7 @@
     "SeedOffersLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SeedOffersLambdaVersioneuqqctaeCmqw6Ar8csHjoZChfzfO2x8RdPIDmIukE"
+        "Ref": "SeedOffersLambdaVersionQjlprFG176k16oVCtNeHl6bkewajhbVhfuVbMKQKQ"
       },
       "Export": {
         "Name": "sls-offers-api-dev-SeedOffersLambdaFunctionQualifiedArn"
@@ -467,7 +467,7 @@
     "SeedLocationsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SeedLocationsLambdaVersionszCCdcSGyCZ3f5sZhnowmrYLbqT1rqT6bVHfcucROPk"
+        "Ref": "SeedLocationsLambdaVersionxUWFDleS6yFTaofKVGIdW56Qmuj2f2bswKGSEtqSldc"
       },
       "Export": {
         "Name": "sls-offers-api-dev-SeedLocationsLambdaFunctionQualifiedArn"
@@ -476,7 +476,7 @@
     "LinkLocationToOfferLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LinkLocationToOfferLambdaVersionnzHQUBVVnDF92LwqZWLRwmH9m4WKTg9o3ktt1hGnv8"
+        "Ref": "LinkLocationToOfferLambdaVersion1gX6YLIGLs9w4KV4Ugv2YgHMywECSKYYQ7EDkfYb85M"
       },
       "Export": {
         "Name": "sls-offers-api-dev-LinkLocationToOfferLambdaFunctionQualifiedArn"
